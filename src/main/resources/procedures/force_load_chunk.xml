@@ -1,0 +1,16 @@
+<procedureblock>
+  <name>force_load_chunk</name>
+  <displayName>Force Load Chunk</displayName>
+  <description>Forces a chunk à être chargé côté serveur aux coordonnées x, y, z</description>
+  <type>action</type>
+  <category>World management</category>
+
+  <inputs>
+    <input type="number" name="x"/>
+    <input type="number" name="y"/>
+    <input type="number" name="z"/>
+    <input type="boolean" name="enable" default="true"/>
+  </inputs>
+
+  <java template="force_load_chunk.java.ftl"/>
+</procedureblock>
